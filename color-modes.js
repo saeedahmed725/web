@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", () => {
             search: "Search",
             slide1  : "Slide 1",
             slide2Title  : "Grow your business with an astonishing ROI that sends shivers down your spine!",
-            slide2SubTitle  : "Stop wasting time and money on ineffective ad campaigns. Let us help you boost your sales with professional advertising strategies and social media growth!",
+            slide2SubTitle  : "We're more than just a digital marketing agency; we're your partners in success. We craft innovative marketing strategies tailored to make your brand stand out and captivate your target audience. We believe success doesn’t happen by chance—it’s achieved through smart work and creativity. Our mission is simple: to deliver exceptional results that make a real impact on your business.",
             slide3  : "Slide 3",
         },
         ar: {
@@ -32,7 +32,7 @@ document.addEventListener("DOMContentLoaded", () => {
             search: "بحث",
             slide1  : "الشريحة 1",
             slide2Title  : "نمِّ عملك بعائد استثمار مذهل يبعث القشعريرة!",
-            slide2SubTitle  : ">توقف عن إهدار الوقت والمال على حملات إعلانية غير فعالة. دعنا نساعدك في زيادة مبيعاتك من خلال استراتيجيات إعلانية ونمو وسائل التواصل الاجتماعي الاحترافية.",
+            slide2SubTitle  : "نحن أكثر من مجرد وكالة تسويق رقمي؛ نحن شركاء نجاحك. نصنع استراتيجيات تسويقية مبتكرة مصممة خصيصًا لتبرز علامتك التجارية وتجذب جمهورك المستهدف. نؤمن بأن النجاح لا يتحقق بالصدفة، بل بالعمل الذكي والإبداع. هدفنا بسيط: تحقيق نتائج استثنائية تُحدث فرقًا حقيقيًا في أعمالك.",
             slide3  : "الشريحة 3",
         },
     };
@@ -73,77 +73,3 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 
-(() => {
-    'use strict'
-
-    const getStoredTheme = () => localStorage.getItem('theme')
-    const setStoredTheme = theme => localStorage.setItem('theme', theme)
-
-    const getPreferredTheme = () => {
-        const storedTheme = getStoredTheme()
-        if (storedTheme) {
-            return storedTheme
-        }
-
-        return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'
-    }
-
-    const setTheme = theme => {
-        if (theme === 'auto') {
-            document.documentElement.setAttribute('data-bs-theme', (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'))
-        } else {
-            document.documentElement.setAttribute('data-bs-theme', theme)
-        }
-    }
-
-    setTheme(getPreferredTheme())
-
-    const showActiveTheme = (theme, focus = false) => {
-        const themeSwitcher = document.querySelector('#bd-theme')
-
-        if (!themeSwitcher) {
-            return
-        }
-
-        const themeSwitcherText = document.querySelector('#bd-theme-text')
-        const activeThemeIcon = document.querySelector('.theme-icon-active use')
-        const btnToActive = document.querySelector(`[data-bs-theme-value="${theme}"]`)
-        const svgOfActiveBtn = btnToActive.querySelector('svg use').getAttribute('href')
-
-        document.querySelectorAll('[data-bs-theme-value]').forEach(element => {
-            element.classList.remove('active')
-            element.setAttribute('aria-pressed', 'false')
-        })
-
-        btnToActive.classList.add('active')
-        btnToActive.setAttribute('aria-pressed', 'true')
-        activeThemeIcon.setAttribute('href', svgOfActiveBtn)
-        const themeSwitcherLabel = `${themeSwitcherText.textContent} (${btnToActive.dataset.bsThemeValue})`
-        themeSwitcher.setAttribute('aria-label', themeSwitcherLabel)
-
-        if (focus) {
-            themeSwitcher.focus()
-        }
-    }
-
-    window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', () => {
-        const storedTheme = getStoredTheme()
-        if (storedTheme !== 'light' && storedTheme !== 'dark') {
-            setTheme(getPreferredTheme())
-        }
-    })
-
-    window.addEventListener('DOMContentLoaded', () => {
-        showActiveTheme(getPreferredTheme())
-
-        document.querySelectorAll('[data-bs-theme-value]')
-            .forEach(toggle => {
-                toggle.addEventListener('click', () => {
-                    const theme = toggle.getAttribute('data-bs-theme-value')
-                    setStoredTheme(theme)
-                    setTheme(theme)
-                    showActiveTheme(theme, true)
-                })
-            })
-    })
-})()
