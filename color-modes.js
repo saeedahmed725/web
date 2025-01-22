@@ -17,6 +17,10 @@ document.addEventListener("DOMContentLoaded", () => {
             team: "Team",
             contact: "Contact",
             search: "Search",
+            slide1  : "Slide 1",
+            slide2Title  : "Grow your business with an astonishing ROI that sends shivers down your spine!",
+            slide2SubTitle  : "Stop wasting time and money on ineffective ad campaigns. Let us help you boost your sales with professional advertising strategies and social media growth!",
+            slide3  : "Slide 3",
         },
         ar: {
             logo: "شعار",
@@ -26,6 +30,10 @@ document.addEventListener("DOMContentLoaded", () => {
             team: "الفريق",
             contact: "تواصل معنا",
             search: "بحث",
+            slide1  : "الشريحة 1",
+            slide2Title  : "نمِّ عملك بعائد استثمار مذهل يبعث القشعريرة!",
+            slide2SubTitle  : ">توقف عن إهدار الوقت والمال على حملات إعلانية غير فعالة. دعنا نساعدك في زيادة مبيعاتك من خلال استراتيجيات إعلانية ونمو وسائل التواصل الاجتماعي الاحترافية.",
+            slide3  : "الشريحة 3",
         },
     };
 
@@ -41,6 +49,9 @@ document.addEventListener("DOMContentLoaded", () => {
         document.getElementById("team").textContent = translations[lang].team;
         document.getElementById("contact").textContent = translations[lang].contact;
         document.getElementById("logo").textContent = translations[lang].logo;
+        document.getElementById("slide2Title").textContent = translations[lang].slide2Title;
+        document.getElementById("slide2SubTitle").textContent = translations[lang].slide2SubTitle;
+
         // تحديث نصوص البحث
         const searchInput = document.querySelector("input[aria-label='بحث']");
         const searchButton = document.querySelector("button[type='submit']");
