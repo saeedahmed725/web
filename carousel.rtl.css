@@ -327,3 +327,20 @@ body {
 .text-shadow {
   text-shadow: 0px 0px 0px rgba(50, 50, 50, 0.5); 
 }
+
+.custom-btn {
+  color: #ffffff !important;
+  background-color: #c11e9a !important;
+}
+
+.custom-btn:hover {
+  color: #c11e9a !important;
+  background-color: #ffffff !important;
+}
+
+.custom-btn:active {
+  color: #ffffff !important;
+  background-color: #c11e9a !important;
+  border-color: #c11e9a !important;
+}
+
