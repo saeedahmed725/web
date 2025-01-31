@@ -3,267 +3,259 @@
 /* Padding below the footer and lighter body text */
 
 body {
-    color: rgb(var(--bs-tertiary-color-rgb));
-  }
-  
-  
-  /* CUSTOMIZE THE CAROUSEL
+  color: rgb(var(--bs-tertiary-color-rgb));
+}
+
+/* CUSTOMIZE THE CAROUSEL
   -------------------------------------------------- */
-  
-  /* Carousel base class */
-  .carousel {
-    margin-bottom: 4rem;
-  }
-  /* Since positioning the image, we need to help out the caption */
-  .carousel-caption {
-    bottom: 3rem;
-    z-index: 10;
-  }
-  
-  /* Declare heights because of positioning of img element */
-  .carousel-item {
-    height: 40rem;
-  }
 
-  .carousel-caption {
-    position: absolute;
-    padding: 3rem;
-    z-index: 1;
-    text-align: center;
-    
-
-
+/* Carousel base class */
+.carousel {
+  margin-bottom: 4rem;
 }
-  
-  
-  /* MARKETING CONTENT
-  -------------------------------------------------- */
-  
-  /* Center align the text within the three columns below the carousel */
-  .marketing .col-lg-4 {
-    margin-bottom: 1.5rem;
-    text-align: center;
-  }
-  .marketing .col-lg-4 p {
-    margin-right: .75rem;
-    margin-left: .75rem;
-  }
-  
-  
-  /* Featurettes
-  ------------------------- */
-  
-  .featurette-divider {
-    margin: 5rem 0; /* Space out the Bootstrap <hr> more */
-  }
-  
-  /* Thin out the marketing headings */
-  
-  /* RESPONSIVE CSS
-  -------------------------------------------------- */
-  
-  @media (min-width: 40em) {
-    /* Bump up size of carousel content */
-    .carousel-caption p {
-      margin-bottom: 1.25rem;
-      font-size: 1.25rem;
-      line-height: 1.4;
-    }
-  
-    .featurette-heading {
-      font-size: 50px;
-    }
-  }
-  
-  @media (min-width: 62em) {
-    .featurette-heading {
-      margin-top: 7rem;
-    }
-  }
-  
-
-  .bd-placeholder-img {
-    font-size: 1.125rem;
-    text-anchor: middle;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    user-select: none;
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  bottom: 3rem;
+  z-index: 10;
 }
 
-.text-white {
-    color: white;
+/* Declare heights because of positioning of img element */
+.carousel-item {
+  height: 40rem;
 }
 
-.text-shadow {
-    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.226);
+.carousel-caption {
+  position: absolute;
+  padding: 3rem;
+  z-index: 1;
+  text-align: center;
 }
-
-
-
 
 .carousel-caption::before {
-    content: '';
-    position: absolute;
-    top: -0.5cm;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    margin: 1rem;
-    border-radius: 15px;
-    background: rgba(143, 143, 143, 0.5);
-    backdrop-filter: blur(5px);
-    z-index: 1;
+  content: "";
+  position: absolute;
+  top: -0.5cm;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: 1rem;
+  border-radius: 15px;
+  background: rgba(143, 143, 143, 0.5);
+  backdrop-filter: blur(5px);
+  z-index: 1;
 }
 
 .carousel-caption h1,
 .carousel-caption p {
-    position: relative;
-    z-index: 1;
+  position: relative;
+  z-index: 10;
+}
+
+/* MARKETING CONTENT
+  -------------------------------------------------- */
+
+/* Center align the text within the three columns below the carousel */
+.marketing .col-lg-4 {
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+.marketing .col-lg-4 p {
+  margin-right: 0.75rem;
+  margin-left: 0.75rem;
+}
+
+/* Featurettes
+  ------------------------- */
+
+.featurette-divider {
+  margin: 5rem 0; /* Space out the Bootstrap <hr> more */
+}
+
+/* Thin out the marketing headings */
+
+/* RESPONSIVE CSS
+  -------------------------------------------------- */
+
+@media (min-width: 40em) {
+  /* Bump up size of carousel content */
+  .carousel-caption p {
+    margin-bottom: 1.25rem;
+    font-size: 1.25rem;
+    line-height: 1.4;
+  }
+
+  .featurette-heading {
+    font-size: 50px;
+  }
+}
+
+@media (min-width: 62em) {
+  .featurette-heading {
+    margin-top: 7rem;
+  }
+}
+
+.bd-placeholder-img {
+  font-size: 1.125rem;
+  text-anchor: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+
+.text-white {
+  color: white;
+}
+
+.text-shadow {
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.226);
 }
 
 @media (min-width: 768px) {
-    .bd-placeholder-img-lg {
-        font-size: 3.5rem;
-    }
+  .bd-placeholder-img-lg {
+    font-size: 3.5rem;
+  }
 }
 
 .b-example-divider {
-    width: 100%;
-    height: 3rem;
-    background-color: rgba(0, 0, 0, .1);
-    border: solid rgba(0, 0, 0, .15);
-    border-width: 1px 0;
-    box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
-
+  width: 100%;
+  height: 3rem;
+  background-color: rgba(0, 0, 0, 0.1);
+  border: solid rgba(0, 0, 0, 0.15);
+  border-width: 1px 0;
+  box-shadow: inset 0 0.5em 1.5em rgba(0, 0, 0, 0.1),
+    inset 0 0.125em 0.5em rgba(0, 0, 0, 0.15);
 }
 
 .b-example-vr {
-    flex-shrink: 0;
-    width: 1.5rem;
-    height: 100vh;
+  flex-shrink: 0;
+  width: 1.5rem;
+  height: 100vh;
 }
 
 .bi {
-    vertical-align: -.125em;
-    fill: currentColor;
+  vertical-align: -0.125em;
+  fill: currentColor;
 }
 
 .nav-scroller {
-    position: relative;
-    z-index: 2;
-    height: 2.75rem;
-    overflow-y: hidden;
+  position: relative;
+  z-index: 10;
+  height: 2.75rem;
+  overflow-y: hidden;
 }
 
 .nav-scroller .nav {
-    display: flex;
-    flex-wrap: nowrap;
-    padding-bottom: 1rem;
-    margin-top: -1px;
-    overflow-x: auto;
-    text-align: center;
-    white-space: nowrap;
-    -webkit-overflow-scrolling: touch;
-}
-
-.btn-bd-primary {
-    --bd-violet-bg: #712cf9;
-    --bd-violet-rgb: 112.520718, 44.062154, 249.437846;
-
-    --bs-btn-font-weight: 600;
-    --bs-btn-color: var(--bs-white);
-    --bs-btn-bg: var(--bd-violet-bg);
-    --bs-btn-border-color: var(--bd-violet-bg);
-    --bs-btn-hover-color: var(--bs-white);
-    --bs-btn-hover-bg: #6528e0;
-    --bs-btn-hover-border-color: #6528e0;
-    --bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
-    --bs-btn-active-color: var(--bs-btn-hover-color);
-    --bs-btn-active-bg: #5a23c8;
-    --bs-btn-active-border-color: #5a23c8;
-}
-
-.bd-mode-toggle {
-    z-index: 1500;
-}
-
-.bd-mode-toggle .dropdown-menu .active .bi {
-    display: block !important;
-}
-
-
-.cairo-regular {
-    font-family: "Cairo", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
-    font-variation-settings: "slnt" 0;
-}
-
-.cairo-medium {
-    font-family: "Cairo", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 500;
-    font-style: normal;
-    font-variation-settings: "slnt" 0;
-}
-
-.cairo-light {
-    font-family: "Cairo", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 300;
-    font-style: normal;
-    font-variation-settings: "slnt" 0;
-}
-
-.cairo-bold {
-    font-family: "Cairo", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 700;
-    font-style: normal;
-    font-variation-settings: "slnt" 0;
-}
-
-.img-responsive {
-    width: 100%;
-
-    height: auto;
-
-    object-fit: cover;
-
-}
-
-@media (max-width: 768px) {
-    .img-responsive {
-        width: auto;
-        height: 100%;
-        object-fit: cover;
-    }
-
-}
-
-.img-custom {
-    width: 50px;
-    height: 50px;
-    border-radius: 12%;
-    object-fit: cover;
+  display: flex;
+  flex-wrap: nowrap;
+  padding-bottom: 1rem;
+  margin-top: -1px;
+  overflow-x: auto;
+  text-align: center;
+  white-space: nowrap;
+  -webkit-overflow-scrolling: touch;
+  z-index: 10;
 }
 
 .navbar {
-    filter: blur(0.5px);
-    backdrop-filter: blur(15px);
-    background-color: rgba(220, 220, 220, 0.622);
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  background-color: rgba(220, 220, 220, 0.622);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  z-index: 1;
 }
+
+.btn-bd-primary {
+  --bd-violet-bg: #712cf9;
+  --bd-violet-rgb: 112.520718, 44.062154, 249.437846;
+
+  --bs-btn-font-weight: 600;
+  --bs-btn-color: var(--bs-white);
+  --bs-btn-bg: var(--bd-violet-bg);
+  --bs-btn-border-color: var(--bd-violet-bg);
+  --bs-btn-hover-color: var(--bs-white);
+  --bs-btn-hover-bg: #6528e0;
+  --bs-btn-hover-border-color: #6528e0;
+  --bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
+  --bs-btn-active-color: var(--bs-btn-hover-color);
+  --bs-btn-active-bg: #5a23c8;
+  --bs-btn-active-border-color: #5a23c8;
+}
+
+.bd-mode-toggle {
+  z-index: 1500;
+}
+
+.bd-mode-toggle .dropdown-menu .active .bi {
+  display: block !important;
+}
+
+.cairo-regular {
+  font-family: "Cairo", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "slnt" 0;
+}
+
+.cairo-medium {
+  font-family: "Cairo", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-variation-settings: "slnt" 0;
+}
+
+.cairo-light {
+  font-family: "Cairo", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  font-variation-settings: "slnt" 0;
+}
+
+.cairo-bold {
+  font-family: "Cairo", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-variation-settings: "slnt" 0;
+}
+
+.img-responsive {
+  width: 100%;
+
+  height: auto;
+
+  object-fit: cover;
+}
+
+@media (max-width: 768px) {
+  .img-responsive {
+    width: auto;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.img-custom {
+  width: 50px;
+  height: 50px;
+  border-radius: 12%;
+  object-fit: cover;
+}
+
+
 
 @font-face {
   font-family: FigtreeVF;
-  src: url(chrome-extension://majdfhpaihoncoakbjgbdhglocklcgno/fonts/FigtreeVF.woff2) format("woff2 supports variations"), url(chrome-extension://majdfhpaihoncoakbjgbdhglocklcgno/fonts/FigtreeVF.woff2) format("woff2-variations");
+  src: url(chrome-extension://majdfhpaihoncoakbjgbdhglocklcgno/fonts/FigtreeVF.woff2)
+      format("woff2 supports variations"),
+    url(chrome-extension://majdfhpaihoncoakbjgbdhglocklcgno/fonts/FigtreeVF.woff2)
+      format("woff2-variations");
   font-weight: 100 1000;
-  font-display: swap
+  font-display: swap;
 }
-
 
 .footer-section {
   background-color: #1a1a1a;
@@ -271,13 +263,18 @@ body {
 }
 
 .footer-section::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   height: 1px;
-  background: linear-gradient(to right, transparent, rgba(255,255,255,0.1), transparent);
+  background: linear-gradient(
+    to right,
+    transparent,
+    rgba(255, 255, 255, 0.1),
+    transparent
+  );
 }
 
 .text-light-gray {
@@ -321,7 +318,6 @@ body {
   width: 20px;
 }
 
-
 /* Add Bootstrap Icons CDN in the head section */
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css");
 
@@ -330,7 +326,7 @@ body {
 }
 
 .text-shadow {
-  text-shadow: 0px 0px 0px rgba(50, 50, 50, 0.5); 
+  text-shadow: 0px 0px 0px rgba(50, 50, 50, 0.5);
 }
 
 .custom-btn {
@@ -348,4 +344,3 @@ body {
   background-color: #c11e9a !important;
   border-color: #c11e9a !important;
 }
-
