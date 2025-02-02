@@ -344,3 +344,33 @@ body {
   background-color: #c11e9a !important;
   border-color: #c11e9a !important;
 }
+
+.text-container {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 20px;
+}
+.text-container p {
+  margin-bottom: 15px;
+}
+.text-container .intro {
+  font-size: 1.25rem;
+  font-weight: bold;
+  text-align: center;
+}
+.text-container .lead {
+  font-size: 1rem;
+}
+.text-container .lead strong {
+  color: #333;
+}
+.text-container .highlight {
+  font-size: 1.1rem;
+  font-weight: bold;
+  text-align: center;
+  color: #007bff;
+}
+.text-container .note {
+  font-size: 0.9rem;
+  color: #6c757d;
+}
