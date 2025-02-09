@@ -374,3 +374,94 @@ body {
   font-size: 0.9rem;
   color: #6c757d;
 }
+
+.crumpled-paper {
+  background: url('https://www.transparenttextures.com/patterns/crumpled-paper.png'); /* خلفية ورقة مكرمشة */
+  padding: 10px;
+  display: inline-block;
+  font-weight: bold;
+  font-size: 30px;
+  position: relative;
+}
+.crumpled-paper-m {
+  background: url('https://www.transparenttextures.com/patterns/crumpled-paper.png'); /* خلفية ورقة مكرمشة */
+  padding: 10px;
+  display: inline-block;
+  font-weight: bold;
+  font-size: 20px;
+  position: relative;
+}
+
+.crumpled-paper::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 20px;
+  background: #fff3cd; /* تأثير قلم الهايلايتر */
+  z-index: -1;
+  transform: rotate(-2deg);
+}
+.crumpled-paper-m::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 20px;
+  background: #fff3cd; /* تأثير قلم الهايلايتر */
+  z-index: -1;
+  transform: rotate(-2deg);
+}
+
+
+
+
+.image-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+}
+
+.image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 30px;
+  filter: url(#wavyEffect); /* Apply SVG filter */
+  transition: filter 0.5s ease-in-out;
+}
+
+.image-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: calc(100% - 30px);
+  height: calc(100% - 30px);
+  border: 15px solid white;
+  box-shadow: 7px 7px 21px #bdbdbd, -7px -7px 21px #ffffff;
+  z-index: 1;
+  background: transparent;
+  pointer-events: none;
+}
+
+.image-container:hover img {
+  filter: url(#wavyHoverEffect); /* Apply distortion on hover */
+}
+
+
+
+.wavy-text {
+  display: inline-block;
+  font-size: 24px;
+  font-weight: bold;
+  position: relative;
+  background: white; /* Mimic a paper background */
+  padding: 5px 15px;
+  border-radius: 8px;
+  filter: url(#wavyTextEffect);
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+}
